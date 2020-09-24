@@ -1,8 +1,9 @@
 fn main() {
+    // 'sum' will be the running sum of the multiples.
     let mut sum = 0;
 
     for n in 1..1000 {
-        //println!("{}", n);
+
         if n % 3 == 0 {
             sum += n;
             println!("{} is a multiple of 3. Sum: {}", n, sum);
@@ -17,5 +18,5 @@ fn main() {
 
 
     }
-    println!("{}", sum)
+    println!("Final sum: {}", sum)
 }
