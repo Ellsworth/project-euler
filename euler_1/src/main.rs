@@ -1,16 +1,21 @@
 fn main() {
-    // `n` will take the values: 1, 2, ..., 100 in each iteration
-    for n in 1..101 {
+    let mut sum = 0;
+
+    for n in 1..1000 {
         //println!("{}", n);
         if n % 3 == 0 {
-            println!("{} is a multiple of 3", n);
+            sum += n;
+            println!("{} is a multiple of 3. Sum: {}", n, sum);
             continue;
         }
+        
         if n % 5 == 0 {
-            println!("{} is a multiple of 5", n);
+            sum += n;
+            println!("{} is a multiple of 5. Sum: {}", n, sum);
             continue;
         }
 
 
     }
+    println!("{}", sum)
 }
