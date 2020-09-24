@@ -15,8 +15,9 @@ fn main() {
             println!("{} is a multiple of 5. Sum: {}", n, sum);
             continue;
         }
+        println!("{}", n);
 
 
     }
-    println!("Final sum: {}", sum)
+    println!("{}", sum)
 }
